@@ -9,7 +9,10 @@ Welcome to my Full-stack portfolio. This page allows others to see current proje
 This portfolio is updated regularly as I broaden my understanding of web development. 
 
 # Demo 
-![]
+
+
+
+![About](./assets/images/fullstack-about-me-section.png)
 
 
 
