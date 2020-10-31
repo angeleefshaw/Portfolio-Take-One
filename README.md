@@ -10,15 +10,17 @@ This portfolio is updated regularly as I broaden my understanding of web develop
 
 # Demo 
 
-
+The section titled "About Me" shares a bit about my interest and background. 
 
 ![About](./assets/images/fullstack-about-me-section.png)
 
+You will find a few of my recent projects under the section titled "Projects". Click on a project for live viewing. 
+
+![Projects](./assets/images/fullstack-projects-section.png)
 
 
 # The Code
 This page features CSS and HTML
-*what special css is included? list below 
 
 # License
 Angelee Shaw's Portfolio is released under an MIT License 
