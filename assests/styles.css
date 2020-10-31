@@ -155,7 +155,7 @@ h2 {
 
 #about {
     width: 45%;
-    margin: 50px 20px 0 80px;
+    margin: 50px 30px 0 50px;
 }
 
 #about p {
@@ -184,12 +184,21 @@ h2 {
 }
 
 /* projects section */
+#projects{
+    margin: 50px 30px 0 50px;
+}
+
 .second-section {
     height: 800px;
 }
 
 button {
     height: 300px;
+}
+
+.project-buttons {
+    display: inline;
+    width: 50%;
 }
 
 .horiseon {
@@ -206,12 +215,8 @@ button {
     text-decoration: none;
 }
 
-.horiseon button {
-    width: fit-content;
-}
-
-.second-section img {
-    width: 45%;
+.project-image {
+    width: 80%;
 }
 
 /* contact info and buttons section */
@@ -219,6 +224,7 @@ button {
     width: 100%;
     background-color: white;
     margin: 0;
+    margin: 50px 30px 0 50px;
 }
 
 #contact h3 {
@@ -237,12 +243,12 @@ button {
 }
 
 .github{
-    width: 160px;
+    width: 140px;
     height: auto;
 }
 
 .linkedin {
-    width: 400px;
+    width: 160px;
     height: auto;
 }
     
