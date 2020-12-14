@@ -5,52 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Full-Stack Portfolio</title>
     <link rel="stylesheet" href="./assets/styles.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=BenchNine:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
 
 <header>
-    <div class="logo"><img src="./assets/images/output-onlinepngtools.png"></div>
+    
     <nav>
       <ul>
+          
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact Me</a></li>
+        <a class="button" href="https://github.com/angeleefshaw"><button><img src="./assets/images/navbar-angelee-small-github.png"></button></a>
       </ul>
+      
     </nav>
-    <a class="button" href="https://github.com/angeleefshaw"><button><img src="./assets/images/navbar-angelee-small-github.png"></button></a>
 </header>
 
 <body>
-    <div class= "img-container">
-        <div class="inner-container">
-            <h1>Angelee Shaw </h1> 
-            <h4>Full-Stack Developer | Creator | Learner</h4>
+    <div class="intro">
+        <div class="circle1">
+            <div class="circle2"></div>
+        </div>
+        <div class="banner-div">
+            <div></div>
+            <div class="banner"> 
+                <h1 style="letter-spacing: 1.5px; padding: 10px; font-size: 48px;">Angelee Shaw </h1> 
+                <div class="inline">
+                    <h4>Full-Stack Developer |</h4>
+                    <h4 style="color: goldenrod;"> Creator</h4>
+                    <h4>| Learner</h4>
+                </div>
+            </div>
+            <p style="font-size: 30px;">________________________________________________</p>
         </div>
     </div>
-    <main>
-        <container class="contents">
-            <section class="first-section">
-                <div id="about">
-                    <h2>About Me</h2>
-                    <p>I am a full-stack developer located in the United States. I enjoy designing websites and bringing programs to life using Javascript. Programming is amongst a host of activities I enjoy. From time to time, you may also find me in the studio painting both acrylic abstract and realistic works. Photoshop and digital design is a fairly new hobby that has become far more interesting than I expected. These creative outlets add to my ability as a developer by allowing me to push my limits while giving me confidence to bring ideas to life. </p>
-                </div>
-                <div class="portrait"><img src="./assets/images/art-sensi2_02.jpg" alt="A photo of Angelee">
-                </div>
-            </section>
-            <section class= "second-section">
-                <div id="projects">
-                    <h2>Projects</h2>
-                    <container class="project-buttons">
-                        <div class="horiseon">
-                            <a class="button-2" href="https://angeleefshaw.github.io/"><button><img class="project-image" src="./assets/images/project-horiseon.png"></button></a>
-                            <a class="button-2" href="https://angeleefshaw.github.io/"><button><img class="project-image" src="./assets/images/project-horiseon.png"></button></a>
-                            <a class="button-2" href="https://angeleefshaw.github.io/"><button><img class="project-image" src="./assets/images/project-horiseon.png"></button></a>
-                        </div>
-                    </container>
-                </div>
-            </section>
-        </container>
-    </main>
+
+    <container class="contents">
+        <section class="first-section">
+            <div id="about">
+                <h2 style="font-size: 42px;">About Me</h2>
+                <p class="about-para">I am a full-stack developer located in the United States. I enjoy designing websites and bringing programs to life using Javascript. Programming is amongst a host of activities I enjoy. From time to time, you may also find me in the studio painting both acrylic abstract and realistic works. Photoshop and digital design is a fairly new hobby that has become far more interesting than I expected. These creative outlets add to my ability as a developer by allowing me to push my limits while giving me confidence to bring ideas to life. </p>
+            </div>
+            <img class="headshot" width="400px" height="auto" src="./assets/images/art-sensi2_02.jpg">
+        </section>
+        
+        <div style="display: flex; flex-direction: row;">
+            <p class="line" style="font-size: 30px;">________________________________________________</p>
+            <p style="font-size: 30px; color: gray; margin-right: 30px; height: 200px;">________________________________________________</p>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <div class="col-6"><a class="button-2" href="https://angeleefshaw.github.io/"><img class="project-image" src="./assets/images/Music-machine-project.png" height="300px" width="250px"></a></div>
+                <div class="col-6" id="yellow-1"><div class="first-textbox"><p>MUSIC MACHINE</p></div></div>
+                <div class="w-100"></div>
+                <div class="row mt-5"></div>
+                <div class="col-6" id="yellow-1"><div class="first-textbox"><p>PASSWORD GENERATOR</p></div></div>
+                <div class="col-6"><a class="button-2" href="https://angeleefshaw.github.io/"><img class="project-image" src="./assets/images/password-generator-project.png"></a></div>
+                <div class="w-100"></div>
+                <div class="row mt-5"></div>
+                <div class="col-6"><a class="button-2" href="https://angeleefshaw.github.io/"><img class="project-image" src="./assets/images/coding-quiz-project.png"></a></div>
+                <div class="col-6" id="yellow-1"><div class="first-textbox"><p>CODING QUIZ</p></div></div>
+                <div class="w-100"></div>
+                <div class="row mt-5"></div>
+                <div class="col-6" id="yellow-1"><div class="first-textbox"><p>CODED PROJECTS</p></div></div>
+                <div class="col-6"><a class="button-2" href="https://angeleefshaw.github.io/"><button><img class="project-image" src="./assets/images/project-horiseon.png"></button></a></div>
+            </div>
+        </div>   
+    </container>
+
 
     <footer>
         <section id="section-three">
@@ -64,9 +92,7 @@
                 </a>
                 <img class= "linkedin" rel="linkedin logo" src="./assets/images/linked-in-footer.png">
             </div>
-            <img class="js_logo" src="./assets/images/480px-JavaScript-logo.png">
         </section>
-        <img class= "footer_crunch" src="./assets/images/Angelee-portfolio-banner-image.jpg">
     </footer>
     
 </body>
