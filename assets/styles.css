@@ -132,86 +132,90 @@ nav a:hover {
 
 
 /* projects section */
+#project h2 {
+  font-family: 'Bebas Neue', cursive;
+  padding: 30px;
+  text-decoration:underline goldenrod;
+}
 .first-textbox {
   text-align: center;
   align-content: center;
   font-size: 30px;
   margin-top: 150px;
 }
-.first-textbox p {
+.first-textbox .project-title {
   font-family: 'Bebas Neue', cursive;
-  font-size: 42px;
+  font-size: 38px;
 }
 
-.second-section {
-    height: 600px;
+.button-2 img:hover {
+  margin-left: 10px;
+  opacity: 50%;
+  border-color: black;
 }
-
-.project-buttons {
-    display: inline;
-    width: 50%;
-}
-
 .horiseon {
     display:flex;
     margin-top: 40px;
-}
-
-.second-section a :hover{
-    border-style: solid;
-    border-color: gold;
-    opacity: 100%;
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    text-decoration: none;
 }
 
 .project-image {
     width: 80%;
 }
 
+.col-6 img {
+  border-color: goldenrod; 
+  border-style: solid;
+}
+
+/* closing section*/
+.thanks {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 56px;
+}
+
 /* contact info and buttons section */
 #contact {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
-    width: 100%;
-    background-color: white;
-    margin: 0;
-    margin: 50px 30px 0 50px;
+  width: 100%;
+  background-color: white;
+  margin: 0;
+  margin: 0 30px 0 50px;
 }
 
 #contact h3 {
   font-family: 'Bebas Neue', cursive;
-    font-size: 36px;
-    margin-bottom: 50px;
+  text-decoration: underline goldenrod;
+  font-size: 36px;
+  margin-bottom: 50px;
 
 }
 #section-three {
-    display: flex;
-    padding: 200px 40px 0 40px;
+  display: flex;;
+  padding: 200px 40px 0 40px;
 }
 
 .github{
-    width: 140px;
-    height: auto;
+  width: 60px;
+  height: auto;
 }
 
 .instagram {
-    width:140px;
-    height: auto;
+  width:60px;
+  height: auto;
 }
 
 .linkedin {
-    width: 160px;
-    height: auto;
+  width: 70px;
+  height: auto;
 }
     
-/* footer */
-.footer_crunch {
-    width: 100%;
-    height:50px;
-}
 
 /*mobile responsive - code mobile view*/
 @media (max-width: 769px) {
