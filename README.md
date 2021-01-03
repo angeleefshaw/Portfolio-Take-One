@@ -1,4 +1,4 @@
-# Portfolio-Take-One
+# Portfolio
 An online portfolio built to display my work
 
 ![Banner-Display](./assets/images/angelee-webpage-portfolio-home.png)
