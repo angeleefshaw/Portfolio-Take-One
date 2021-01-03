@@ -31,7 +31,7 @@
   N/A
 
   ## Questions
-  GITHUB > Github.com/angeleefshaw
-  LINKEDIN > https://www.linkedin.com/in/angelee-shaw-2a65861bb/
-  EMAIL > angeleefshaw@gmail.com
+  GITHUB- Github.com/angeleefshaw
+  LINKEDIN-  https://www.linkedin.com/in/angelee-shaw-2a65861bb/
+  EMAIL- angeleefshaw@gmail.com
   
