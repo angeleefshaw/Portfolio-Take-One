@@ -1,8 +1,7 @@
 
-  ## Title
-  Portfolio
+  ## Portfolio
   
-  [CodingPortfolio](https://angeleefshaw.github.io/fullstack-portfolio/ "Fullstack Portfolio")
+  [Check it out here!](https://angeleefshaw.github.io/fullstack-portfolio/ "Fullstack Portfolio")
 
   ## Description 
   An online portfolio built to showcase my most challenging and enjoyable projects as a developer.
