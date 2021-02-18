@@ -5,11 +5,6 @@
     padding: 0;
 }
 
-.line {
-  float: right;
-  color:gray;
-  padding: 50px 0 200px 30px
-}
 
 
 /* Nav bar, content, and logo */
@@ -18,6 +13,9 @@
 nav {
     width: -webkit-fill-available;
     height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
 } 
 
 nav ul {
@@ -55,6 +53,14 @@ nav a:hover {
     transition: all 0.3s ease 0s;
     font-family: 'Bebas Neue', cursive;   
 }
+
+.burger{
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: black;
+}
+
 
 .button button{
     display: flex;
@@ -133,49 +139,6 @@ nav a:hover {
   font-size: 20px;
 }
 
-
-/* projects section */
-#project {
-  display:flex; 
-  flex-direction: column; 
-  align-items: center;
-}
-#project h2 {
-  font-family: 'Bebas Neue', cursive;
-  padding: 30px;
-  text-decoration:underline goldenrod;
-  margin-bottom: 30px;
-}
-.first-textbox {
-  text-align: center;
-  align-content: center;
-  font-size: 30px;
-  margin-top: 150px;
-}
-.first-textbox .project-title {
-  font-family: 'Bebas Neue', cursive;
-  font-size: 38px;
-}
-
-.button-2 img:hover {
-  margin-left: 10px;
-  opacity: 50%;
-  border-color: black;
-}
-.horiseon {
-    display:flex;
-    margin-top: 40px;
-}
-
-.project-image {
-    width: 900%;
-}
-
-.col-6 img {
-  border-color: goldenrod; 
-  border-style: solid;
-}
-
 /* closing section*/
 .thanks {
   display: flex;
@@ -227,189 +190,44 @@ nav a:hover {
   height: auto;
   margin-bottom: 20px;
 }
+
+@media screen and (max-width: 1024px) {
+  /* .burger {
+    display:none;
+  } */
+}
     
 
 /*mobile responsive - code mobile view*/
-@media (max-width: 769px) {
-    /* imports */
-    @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@media screen and (max-width: 768px) {
+
+  @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  nav {
+    position:absolute;
+    right: 0px;
+    height:92vh;
+    top:8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+   
+  }
+
+
+
+
+
+
   
-    /*Mobile Menu CSS*/
-    .nav-toggle {
-      cursor: pointer;
-      height: 2rem;
-      left: 2rem;
-      position: fixed;
-      top: 2rem;
-      width: 3.6rem;
-      z-index: 2;
-    }
-    .mobile-header {
-      display: block !important;
-    }
-    .desktop-header {
-      display: none;
-    }
-    .nav-toggle:hover {
-      opacity: 0.8;
-    }
-  
-    .nav-toggle .nav-toggle-bar,
-    .nav-toggle .nav-toggle-bar::after,
-    .nav-toggle .nav-toggle-bar::before {
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      background: gold;
-      content: "";
-      height: 0.6rem;
-      transition: all 0.5s;
-      width: 90%;
-    }
-  
-    .nav-toggle .nav-toggle-bar {
-      margin-top: 0;
-    }
-  
-    .nav-toggle .nav-toggle-bar::after {
-      margin-top: 0.8rem;
-    }
-  
-    .nav-toggle .nav-toggle-bar::before {
-      margin-top: -0.8rem;
-    }
-  
-    .nav-toggle.expanded .nav-toggle-bar {
-      background: transparent;
-    }
-  
-    .nav-toggle.expanded .nav-toggle-bar::after,
-    .nav-toggle.expanded .nav-toggle-bar::before {
-      background: gold;
-      margin-top: 0;
-    }
-  
-    .nav-toggle.expanded .nav-toggle-bar::after {
-      -ms-transform: rotate(45deg);
-      -webkit-transform: rotate(45deg);
-      transform: rotate(45deg);
-    }
-  
-    .nav-toggle.expanded .nav-toggle-bar::before {
-      -ms-transform: rotate(-45deg);
-      -webkit-transform: rotate(-45deg);
-      transform: rotate(-45deg);
-    }
-  
-    /* nav */
-    .nav {
-      background: #ffffff;
-      color: white;
-      cursor: pointer;
-      display: block;
-      font-size: 2rem;
-      height: 100vh;
-      left: -20rem;
-      padding: 8rem 2rem 2rem 2rem;
-      position: fixed;
-      top: 0;
-      transition: left 0.5s;
-      width: 20rem;
-      z-index: 1;
-    }
-  
-    .nav.expanded {
-      left: 0;
-      float: left;
-      width: 100%;
-    }
-  
-    .nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: block;
-      float: left;
-      width: 100% !important;
-    }
-  
-    header {
-      display: block;
-      justify-content: inherit;
-      align-items: inherit;
-      opacity: 100%;
-      height: 0;
-      font-size: 16px;
-    }
-  
-    .img-container .inner-container {
-      width: 100%;
-      height: auto;
-      margin: 0px;
-      padding: 20px 10px;
-      float: left;
-    }
-    h1 {
-      font-size: 36px;
-    }
-  
-    h2 {
-      font-size: 29px;
-      padding: 12px 20px;
-    }
-    h4 {
-      font-size: 14px;
-    }
-    #about p {
-      margin-top: 15px;
-      padding-right: 10px;
-    }
-  
-    .first-section {
-      display: block;
-      height: auto;
-      width: 100%;
-    }
-    #about {
-      width: 100%;
-      /*    see the comment on line 390      */
-    }
-    .portrait {
-      width: 100%;
-      height: 80%;
-      background-size: contain;
-      background-position: center;
-  
-      margin-right: 0;
-    }
-    .second-section {
-      height: auto;
-      clear: both;
-    }
-    #projects {
-      margin: 50px 10px 0 10px;
-    }
-    .project-image {
-      width: 90%;
-    }
-    .portrait img {
-      float: none;
-  
-      border-radius: 100%;
-      max-width: 300px;
-      height: auto;
-      margin: auto auto 30px auto;
-      /*    to center make it display block and margin auto      */
-      display: block;
-    }
-    .horiseon {
-      display: block;
-      margin-top: 40px;
-    }
-    .project-buttons a button {
-      margin-bottom: 20px;
     }
     /* contact me */
     #contact {
