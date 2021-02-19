@@ -182,7 +182,8 @@ nav a:hover {
   }
 
   .intro {
-    height: 650px;
+    width: auto;
+    height: 500px;
     justify-content: center;
   }
 
