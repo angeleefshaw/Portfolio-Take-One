@@ -230,6 +230,7 @@ nav a:hover {
     border-style: solid;
     border-color: black;
     width: auto;
+    margin-bottom: 10px;
   }
 
   .project-1-image, .project-2-image, .project-3-image {
