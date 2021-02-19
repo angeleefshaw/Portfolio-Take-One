@@ -75,23 +75,16 @@ nav a:hover {
 .intro {
   display: flex;
   align-items: center;
-  /* height: 800px; */
-  /* margin-left: 60px; */
-  /* margin-top: 60px; */
 }
 
 .banner-div {
   display: flex;
-  /* max-width: 100%; */
-  /* margin: 10px 0 0 30; */
-  /* font-size: 50px; */
   margin-bottom: 100px;
 }
 
 .banner {
   display: flex;
   flex-direction: column;
-  /* float: right;; */
   font-family: 'Bebas Neue', cursive;   
   height: 100px;
 }
@@ -117,6 +110,11 @@ nav a:hover {
   font-family:'Times New Roman', Times, serif;
   line-height: 40px;
   font-size: 20px;
+}
+
+/* projects */
+.projects {
+  display: flex;
 }
 
 /* closing section*/
@@ -222,10 +220,28 @@ nav a:hover {
     width: auto;
   }
 
+  .projects {
+    flex-direction: column;
+    row-gap:20px;
+    padding: 30px;
+  }
+
+  .project-1-container, .project-2-container, .project-3-container {
+    border-style: solid;
+    border-color: black;
+    width: auto;
+  }
+
+  .project-1-image, .project-2-image, .project-3-image {
+  
+  }
+
+
+
 
 }
 
-@media screen and (max-width: 1024px)and (min-width: 601px) {
+@media screen and (max-width: 2000px)and (min-width: 601px) {
 
   @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 
@@ -233,7 +249,11 @@ nav a:hover {
     overflow-x: hidden;
   }
 
-  .nav-links {
+  .burger {
+    display: none;
+  }
+
+  .inline-mobile {
     display: none;
   }
 
@@ -246,6 +266,12 @@ nav a:hover {
     flex-direction: column;
     align-items: center ;
    
+  }
+
+  .intro {
+    height: 800px;
+    margin-left: 60px;
+    margin-top: 60px;
   }
 
 }
