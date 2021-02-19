@@ -13,7 +13,6 @@
 nav {
     width: -webkit-fill-available;
     height: 50px;
-    justify-content: space-around;
     align-items: center;
     min-height: 8vh;
 } 
@@ -104,36 +103,17 @@ nav a:hover {
 
 /* About me section  */
 .first-section {
-  justify-content: space-between;
-  display: inline-flex;
+  padding: 20px;
   flex-direction: row;
-  align-items: flex-end;
-  padding: 100px 30px 0px 30px;
-  margin-bottom: 100px;
-  margin-left: 30px;
-}
-
-.headshot {
-  color: goldenrod;
-  display: flex;
-  flex-direction: row;
-  float:right;
-  padding: 30px;
-  margin-left: 40px;
 }
 
 #about {
-  height: 500px;
-  width: 55%;
-  font-size: 38px;
-  margin-left: 30px;
   font-family: 'Bebas Neue', cursive;  
     
 }
 
 #about p {
   display: flex;
-  margin-top: 30px;
   font-family:'Times New Roman', Times, serif;
   line-height: 40px;
   font-size: 20px;
@@ -191,15 +171,49 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 1024px) {
-  /* .burger {
-    display:none;
-  } */
-}
+
     
 
 /*mobile responsive - code mobile view*/
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) and (min-width: 300px) {
+
+  .nav-links {
+    display: none;
+  }
+
+  .intro {
+    justify-content: center;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .inline {
+    display:none
+  }
+
+  .inline-mobile {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .first-section {
+    margin:auto;
+    text-align: center;
+  }
+
+  .about {
+    width: auto;
+  }
+
+
+}
+
+@media screen and (max-width: 1024px)and (min-width: 601px) {
 
   @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 
@@ -222,49 +236,4 @@ nav a:hover {
    
   }
 
-
-
-
-
-
-  
-    }
-    /* contact me */
-    #contact {
-      width: 100%;
-  
-      margin: 50px 10px 0 10px;
-    }
-    .github {
-      width: 100px;
-      height: auto;
-    }
-    .linkedin {
-      width: 100px;
-      height: auto;
-    }
-    .footer_crunch {
-      width: 100%;
-      height: auto;
-    }
-    #section-three {
-      display: block;
-      padding: 30px 10px 10px;
-    }
-    .js_logo {
-      border-radius: 50%;
-      height: auto;
-      width: 75%;
-      float: right;
-      margin-top: 20px;
-      margin-bottom: 30px;
-    }
-    .img-container {
-      height: 60vh;
-
-    }
-    nav#nav .logo {
-      padding: 20px;
-    }
-  }
-  
+}
