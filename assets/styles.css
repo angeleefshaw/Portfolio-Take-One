@@ -75,7 +75,7 @@ nav a:hover {
 .intro {
   display: flex;
   align-items: center;
-  height: 800px;
+  /* height: 800px; */
   /* margin-left: 60px; */
   /* margin-top: 60px; */
 }
@@ -182,6 +182,7 @@ nav a:hover {
   }
 
   .intro {
+    height: 650px;
     justify-content: center;
   }
 
