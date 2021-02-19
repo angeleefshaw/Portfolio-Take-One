@@ -76,22 +76,22 @@ nav a:hover {
   display: flex;
   align-items: center;
   height: 800px;
-  margin-left: 60px;
-  margin-top: 60px;
+  /* margin-left: 60px; */
+  /* margin-top: 60px; */
 }
 
 .banner-div {
   display: flex;
-  max-width: 100%;
-  margin: 10px 0 0 30;
-  font-size: 50px;
+  /* max-width: 100%; */
+  /* margin: 10px 0 0 30; */
+  /* font-size: 50px; */
   margin-bottom: 100px;
 }
 
 .banner {
   display: flex;
   flex-direction: column;
-  float: right;;
+  /* float: right;; */
   font-family: 'Bebas Neue', cursive;   
   height: 100px;
 }
@@ -189,6 +189,12 @@ nav a:hover {
     text-align: center;
   }
 
+  .banner {
+    width: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
   .inline {
     display:none
   }
@@ -197,7 +203,7 @@ nav a:hover {
     width: auto;
     display: flex;
     flex-direction: row;
-    font-size: 18px;
+    font-size: 1rem;
     align-items: center;
     text-align: center;
   }
