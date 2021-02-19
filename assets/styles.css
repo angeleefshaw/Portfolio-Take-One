@@ -95,13 +95,22 @@ nav a:hover {
 }
 
 /* About me section  */
+h2 {
+  font-size: 2.5em; 
+  font-family: 'Bebas Neue', cursive ;
+}
+
 .first-section {
   padding: 20px;
   flex-direction: row;
 }
 
+.about-header {
+  font-family:'Bebas Neue', cursive;
+}
 #about {
-  font-family: 'Bebas Neue', cursive;  
+  font-family: 'Bebas Neue', cursive;
+  
     
 }
 
@@ -184,7 +193,7 @@ nav a:hover {
 
   .intro {
     width: auto;
-    height: 500px;
+    height: 600px;
     justify-content: center;
   }
 
@@ -214,7 +223,9 @@ nav a:hover {
   .first-section {
     margin:auto;
     text-align: center;
+    margin-bottom: 100px;
   }
+
 
   .about {
     width: auto;
