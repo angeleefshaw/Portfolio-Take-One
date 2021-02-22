@@ -253,12 +253,19 @@ h2 {
 
 }
 
+@media screen and (max-width: 880px)and (min-width: 100px) {
+  .headshot {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 2000px)and (min-width: 601px) {
 
   @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 
   body {
     overflow-x: hidden;
+   
   }
 
   .burger {
@@ -284,6 +291,32 @@ h2 {
     height: 800px;
     margin-left: 60px;
     margin-top: 60px;
+  }
+
+  
+
+  .first-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 200px;
+  }
+
+  #about {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    padding: 40px;
+  }
+
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-1-container, .project-2-container, .project-3-container {
+    width: 70%;
   }
 
 }
