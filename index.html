@@ -6,7 +6,6 @@
     <title>A Full-Stack Portfolio</title>
     <link rel="stylesheet" href="./assets/styles.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -32,6 +31,7 @@
 </header>
 
 <body>
+
     <div class="intro">
         <div class="banner"> 
             <h1>Angelee Shaw </h1> 
@@ -47,11 +47,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
     <div class="first-section">
         <div id="about">
             <h2><span style="color: cornflowerblue;"> 01.</span> About Me</h2>
@@ -71,15 +66,11 @@
             <span> <span class="arrow">&#187;</span> MySQL</span>
         </div>
     </div>
-   
-    
-
-    
     <div class= "project-container">
         <h2 style="margin-bottom: 2rem;"><span style="color: cornflowerblue;"> 02.</span> Projects</h2>
 
-        <div style="border-style: solid; margin-bottom: 2rem; display: flex; flex-direction: row;">
-            <div style="padding: 10px 20px;">
+        <div class="trippercont" style="border-style: solid; margin-bottom: 2rem; display: flex; flex-direction: row;">
+            <div class="desc" style="padding: 10px 20px;">
                 <p style="font-size: 30px; font-family: 'Roboto Mono', monospace;">Tripper</p>
                 <p style="font-family:'Quicksand', sans-serif;">short description of tripper, what I did. I did this function to create this project. it was fun.</p>
                 <div class="holds-buttons">
@@ -87,16 +78,18 @@
                     <a style="background-color:khaki; padding: .5rem; border-radius: 10px;">pexels api</a>
                     <a style="background-color:khaki; padding: .5rem; border-radius: 10px;">heroku</a>
                     <a style="background-color:khaki; padding: .5rem; border-radius: 10px;">nodejs</a>
-                    <a style="background-color:khaki; padding: .5rem; border-radius: 10px;">mysql</a>     
+                    <a style="background-color:khaki; padding: .5rem; border-radius: 10px;">mysql</a>
+                    <a style="background-color:khaki; padding: .5rem; border-radius: 10px;">handlebars</a>
+                    <a style="background-color:khaki; padding: .5rem; border-radius: 10px;">sequelize ORM</a>     
                 </div>
                  
-            </div>
-                
+            </div> 
+            
+            <div class="prj">
             <div class="project-media" style="padding: 20px ; margin-left:300px; display: flex; flex-direction: column;">
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="margin-bottom: 10px;background-color:grey; font-family:'Roboto Mono', monospace; border-style: none;">
                     Project Preview
-                  </button>
-                
+                </button>
                   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                       <div class="modal-content">
@@ -110,37 +103,35 @@
                     </div>
                   </div>
 
-                <button class="button" href="https://tripper-db.herokuapp.com/"> Live Site</button>
+                <button class="button"><a href="https://tripper-db.herokuapp.com/" target="blank" style="text-decoration: none; color:ghostwhite">Live Site</a> </button>
                 <button class="button" href="https://github.com/treyjewett/Tripper.git"> GitHub Repo</button>
             </div>
-
+            </div>
         </div>
 
 
         <div style="border-style: solid; margin-bottom: 2rem; display: flex; flex-direction: row;">
-            <div style="padding: 10px 20px;">
+            <div class="desc" style="padding: 10px 20px;">
                 <p style="font-size: 30px; font-family: 'Roboto Mono', monospace;">ReadMe Generator</p>
                 <p style="font-family:'Quicksand', sans-serif;">short description of tripper, what I did. I did this function to create this project. it was fun.</p>
                 <div class="holds-buttons">
                     <a style="background-color:khaki; padding: .5rem; border-radius: 10px;">javascript</a>
                     <a style="background-color:khaki; padding: .5rem; border-radius: 10px;">github</a>
-                    <a style="background-color:khaki; padding: .5rem; border-radius: 10px;">heroku</a>
                     <a style="background-color:khaki; padding: .5rem; border-radius: 10px;">nodejs</a>
-                    <a style="background-color:khaki; padding: .5rem; border-radius: 10px;">mysql</a>     
-                </div>
-                 
+                    <a style="background-color:khaki; padding: .5rem; border-radius: 10px;">inquirer</a>     
+                </div>  
             </div>
-                
+             
+            <div class="prj">
             <div class="project-media" style="padding: 20px ; margin-left:300px; display: flex; flex-direction: column;">
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal-2" style="margin-bottom: 10px;background-color:grey; font-family:'Roboto Mono', monospace; border-style: none;">
                     Project Preview
-                  </button>
-                
+                </button>
                   <div class="modal fade" id="exampleModal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                       <div class="modal-content">
                         <div class="modal-body">
-                            <img class="project-image" src="assets/images/" width="800px">
+                            <img class="project-image" src="assets/images/thumbnail-readme-gen.jpg" width="800px">
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -148,15 +139,16 @@
                       </div>
                     </div>
                   </div>
-
-                <button class="button" href="https://tripper-db.herokuapp.com/"> Live Site</button>
-                <button class="button" href="https://github.com/treyjewett/Tripper.git"> GitHub Repo</button>
+                <button class="button"><a href="https://www.youtube.com/watch?v=xlB12EdwFpU&feature=youtu.be" target="blank" style="text-decoration: none; color:ghostwhite">Demo Video</a></button>
+                <button class="button"><a href="https://github.com/angeleefshaw/readme-gen.git" style="text-decoration: none; color:ghostwhite">Github Repo</a></button>
+            
             </div>
-
+            </div>
+        
         </div>
 
         <div style="border-style: solid; margin-bottom: 2rem; display: flex; flex-direction: row;">
-            <div style="padding: 10px 20px;">
+            <div class="desc" style="padding: 10px 20px;">
                 <p style="font-size: 30px; font-family: 'Roboto Mono', monospace;">Multimedia Website</p>
                 <p style="font-family:'Quicksand', sans-serif;">short description of tripper, what I did. I did this function to create this project. it was fun.</p>
                 <div class="holds-buttons">
@@ -168,7 +160,8 @@
                 </div>
                  
             </div>
-                
+            
+            <div class="prj">
             <div class="project-media" style="padding: 20px ; margin-left:300px; display: flex; flex-direction: column;">
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal-3" style="margin-bottom: 10px;background-color:grey; font-family:'Roboto Mono', monospace; border-style: none;">
                     Project Preview
@@ -187,8 +180,10 @@
                     </div>
                   </div>
 
-                <button class="button" href="https://tripper-db.herokuapp.com/"> Live Site</button>
-                <button class="button" href="https://github.com/treyjewett/Tripper.git"> GitHub Repo</button>
+                <button class="button"><a href="https://multimedia-website.herokuapp.com/" target="blank" style="text-decoration: none; color:ghostwhite">Live Site</a></button>
+                <button class="button"><a href="https://github.com/angeleefshaw/multimedia-website.git" style="text-decoration: none; color:ghostwhite">Github Repo</a></button>
+
+            </div>
             </div>
 
         </div>
