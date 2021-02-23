@@ -23,7 +23,7 @@ nav ul {
     justify-content: space-between; 
     padding: 0 20px;
     list-style: none;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Roboto Mono', monospace;
     letter-spacing: 1.5px; 
 }
   
@@ -45,12 +45,9 @@ ul li a {
 }
 
 nav a:hover {
-    color:goldenrod;
-    border-style: solid;
-    border-color: goldenrod;
-    border-radius: 60px;
+    color:cornflowerblue;
     transition: all 0.3s ease 0s;
-    font-family: 'Bebas Neue', cursive;   
+    font-family: 'Roboto Mono', monospace;  
 }
 
 .burger{
@@ -60,8 +57,7 @@ nav a:hover {
   background-color: black;
 }
 
-
-.button button{
+.button-1 button{
     display: flex;
     float: left;
     border: none;
@@ -71,6 +67,12 @@ nav a:hover {
     background-color: ghostwhite;
     font-family: 'Bebas Neue', cursive;   
 }
+
+
+
+
+
+/* intro section*/
 
 .intro {
   display: flex;
@@ -85,8 +87,17 @@ nav a:hover {
 .banner {
   display: flex;
   flex-direction: column;
-  font-family: 'Bebas Neue', cursive;   
+  font-family: 'Quicksand', sans-serif; 
   height: 100px;
+  font-size: .5rem;
+}
+
+h1 {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bolder;
+  letter-spacing: 1.5px; 
+  padding-bottom: 15px; 
+  font-size: 4rem;  
 }
 
 .inline {
@@ -94,48 +105,73 @@ nav a:hover {
   flex-direction: row;
 }
 
+
+
+
 /* About me section  */
 h2 {
+  font-family: 'Roboto Mono', monospace;
   font-size: 2.5em; 
-  font-family: 'Bebas Neue', cursive;
   text-align: center;
+}
+
+.contents {
+  height: 600px;
+  background: rgba(245, 245, 245, 0.671)
 }
 
 .first-section {
   padding: 20px;
   flex-direction: row;
-}
 
-.about-header {
-  font-family:'Bebas Neue', cursive;
-}
-#about {
-  font-family: 'Bebas Neue', cursive;
-  
-    
 }
 
 #about p {
   display: flex;
-  font-family:'Times New Roman', Times, serif;
+  font-family: 'Quicksand', sans-serif;
   line-height: 40px;
-  font-size: 20px;
+  font-size: 1.25rem;
+  margin-top: .5rem;
 }
 
-/* projects */
-.projects {
-  display: flex;
+.skill-list {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.5rem;
+  display: flex; 
+  flex-direction: column; 
+  margin-top: 150px;  
 }
 
-/* closing section*/
-.thanks {
+.arrow {
+  color: cornflowerblue; 
+  font-weight: 900;
+}
+
+
+
+
+
+/*projects*/
+.project-container {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  margin-top: 100px;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 56px;
+  height: auto;
+  column-gap: 3rem;
+  padding: 60px;
 }
+
+.button {
+  background-color:grey; 
+  font-family:'Roboto Mono', monospace; 
+  border-style: none;
+  text-decoration: none  !important;
+  padding: 4px;
+  border-radius: 5px;
+  color: aliceblue;
+  margin-bottom: 10px;
+  
+}
+
 
 /* contact info and buttons section */
 #contact {
@@ -150,15 +186,18 @@ h2 {
 }
 
 #contact h3 {
-  font-family: 'Bebas Neue', cursive;
   text-decoration: underline goldenrod;
   font-size: 36px;
-  margin-bottom: 50px;
-
+  margin-bottom: 20px;
 }
+
 #section-three {
   display: flex;;
   padding: 100px 40px 0 40px;
+}
+
+.contact-btns {
+  margin:10px
 }
 
 .github{
@@ -227,25 +266,18 @@ h2 {
     margin-bottom: 100px;
   }
 
-
   .about {
     width: auto;
   }
 
-  .projects {
-    flex-direction: column;
-    row-gap:20px;
-  }
-
-  .project-1-container, .project-2-container, .project-3-container {
-    /* border-style: solid;
-    border-color: black; */
+  #contact {
+    margin: auto;
     width: auto;
-    margin-bottom: 10px;
   }
 
-  .project-1-image, .project-2-image, .project-3-image {
-  
+  .skill-list {
+    width: auto;
+    column-gap: 1rem;
   }
 
 
@@ -291,8 +323,6 @@ h2 {
     margin-top: 60px;
   }
 
-  
-
   .first-section {
     display: flex;
     flex-direction: row;
@@ -305,17 +335,10 @@ h2 {
     flex-direction: column;
     width: 50%;
     text-align: center;
-    padding: 40px;
+    padding: 30px;
   }
 
-  .projects {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .project-1-container, .project-2-container, .project-3-container {
-    width: 70%;
-  }
+  
 
 
 }
