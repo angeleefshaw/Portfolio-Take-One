@@ -359,11 +359,20 @@ h2 {
   }
 
   .trippercont {
+    width: 100%;
     border-style: solid; 
     margin-bottom: 2rem; 
     display: flex; 
     flex-direction: row;
   }
 
+  
 
+
+}
+
+@media screen and (max-width: 2000px)and (min-width: 1500px) {
+  .prj {
+    margin-left: 350px;
+  }
 }
