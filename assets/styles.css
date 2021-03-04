@@ -172,6 +172,15 @@ h2 {
   
 }
 
+.proj-title {
+  font-size: 30px; 
+  font-family: 'Roboto Mono', monospace;
+}
+
+.proj-desc {
+  font-family:'Quicksand', sans-serif;
+}
+
 
 
 /* contact info and buttons section */
@@ -290,6 +299,10 @@ h2 {
     width: auto;
   }
 
+  .project-container {
+    padding: 10px;
+  }
+
   .trippercont {
     display: flex;
     flex-direction: column;
@@ -297,6 +310,20 @@ h2 {
   
  .prj {
    display: none;
+ }
+
+ .proj-title {
+   font-size: 24px;
+   margin-bottom: 5px ;
+ }
+ 
+ .proj-desc {
+   font-size: .9em;
+ }
+
+ .trippercont {
+ 
+   width: auto;
  }
 
 
