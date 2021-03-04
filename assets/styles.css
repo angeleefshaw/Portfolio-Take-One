@@ -413,10 +413,19 @@ h2 {
 
   .trippercont {
     width: 100%;
+    height: 210px;
     border-style: solid; 
     margin-bottom: 2rem; 
     display: flex; 
     flex-direction: row;
+  }
+
+  .trippercont-special {
+    height: 240px;
+  }
+
+  .holds-buttons {
+    margin-top: 30px;
   }
 
   
