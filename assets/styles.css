@@ -280,7 +280,7 @@ h2 {
   .inline-mobile {
     width: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     font-size: 1rem;
     align-items: center;
     text-align: center;
