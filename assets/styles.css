@@ -343,21 +343,9 @@ h2 {
 
  .trippercont {
    border-style: solid;
+   height: 420px;
    margin-bottom: 28px;
    width: auto;
- }
-
- .project-1-box {
-   height: 360px;
-
- }
-
- .project-2-box {
-   height:340px;
- }
-
- .project-3-box {
-   height:395px
  }
 
  .button {
@@ -365,6 +353,16 @@ h2 {
    margin-bottom: 10px;
  }
 
+
+
+
+}
+
+@media screen and (max-width: 880px)and (min-width: 100px) {
+  .headshot {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 2000px)and (min-width: 601px) {
 
@@ -429,6 +427,10 @@ h2 {
   .holds-buttons {
     margin-top: 30px;
   }
+
+  
+
+
 }
 
 @media screen and (max-width: 2000px)and (min-width: 1500px) {
