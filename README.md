@@ -7,7 +7,7 @@
   An online portfolio built to showcase my most challenging and enjoyable projects as a developer.
 
   ## Usage
-  Click on the live link given above. Use the navigation links to traverse the page. Click on project images to view each project.
+  Click on the live link given above. Use the navigation links to traverse the page. Click on 'Project Preview' to view each project.
 
   ## License
   MIT [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
